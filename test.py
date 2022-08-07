@@ -1,11 +1,10 @@
-def fib(n):
-    f1 = 0
-    f2 = 1
+def fizz(number):
 
-    for f in range(0, n):
-        f = f1 + f2
-        f2 += f1
-        print(f, f2)
-    return f2
+    for fi in range(0, number):
+        fi += 1
+        print(fi)
 
-print(fib(10))
+        if fi / 2 == 0:
+            print(fi.replace(fi, 'fizz'))
+
+print(fizz(25))
